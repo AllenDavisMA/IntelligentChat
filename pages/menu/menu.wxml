@@ -1,0 +1,20 @@
+<!--pages/menu/menu.wxml-->
+<view class="menu">
+  <view class="rebot_chat" bindtap="chat">
+    <image src="../img/rebot.png"></image>
+    <button >是你呀</button>
+  </view>
+  <view class="memo" bindtap="write">
+    <image src="../img/momo.png"></image>
+    <button >备忘录</button>
+  </view>
+  <!-- <view class="face_re" bindtap="face_re">
+    <image src="../../img/face.png"></image>
+    <button >人脸识别</button>
+  </view> -->
+  <view class="personal" bindtap="dingzhi">
+    <image src="../img/person.png"></image>
+    <button >定制</button>
+  </view>
+</view>
+<my-component></my-component>

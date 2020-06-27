@@ -1,0 +1,57 @@
+page{
+  background-color: rgb(247, 247, 247);
+}
+
+.header{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.header .back{
+  margin-left: 15rpx;
+}
+.header .back image{
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
+.header .save image{
+  width: 27px;
+  height: 27px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.today{
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  color: rgb(124, 123, 123);
+  font-family: Microsoft YaHei;
+}
+.line {
+  font-size: 22px ;
+  border-bottom: solid 1px #ccc;
+  line-height: 0.9;
+  margin-top: 5px;
+}
+.form{
+  width: 750rpx;
+  height: 100%;
+}
+.form .title{
+  display: flex;
+  margin-left: 8px;
+  margin-top: 7px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Microsoft YaHei;
+  color: rgb(116, 116, 116);
+}
+.form .content{
+  margin: 7px 7px;
+  font-size: 15px;
+  letter-spacing:10px;
+  font-family: Microsoft YaHei;
+}

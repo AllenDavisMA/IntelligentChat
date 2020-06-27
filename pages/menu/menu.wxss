@@ -1,0 +1,38 @@
+/* pages/menu/menu.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  background-image: url("http://a1.qpic.cn/psc?/V1016BJX2XpDfG/ZOHqlMnlPhi5393oWyanhKKaALGy6Gi4JhZ4LPvX806QfqJM6rbJ9nK.pj.kSSPWek5AGlIYOUv40v.TXH.aWg!!/b&ek=1&kp=1&pt=0&bo=7gI2Be4CNgURECc!&tl=1&vuin=1435901380&tm=1592467200&sce=60-2-2&rf=viewer_311");
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  -moz-background-size:100% 100%;
+}
+
+.menu{
+  width:600rpx;
+  height: 400px;
+  margin: 100px auto;
+}
+.menu .rebot_chat,.menu .memo,.menu .face_re,.menu .personal{
+    width:400rpx;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+  
+}
+
+ image{
+  width: 130rpx;
+  height: 100rpx;
+  border-radius: 5px;
+   margin: 10rpx;
+}
+
+ button{
+    width: 250rpx;
+    height:100rpx;
+    font-size: 15px;
+    align-self: center;
+    background-color:transparent;
+}
+

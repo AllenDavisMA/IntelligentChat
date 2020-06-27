@@ -1,0 +1,22 @@
+<view class="header">
+  备忘录
+  <view class="line"></view>
+</view>
+
+<block wx:for="{{arrlist}}" wx:for-index="index" wx:for-item="notebook">
+
+<view class="notebook" data-title="{{notebook.title}}" data-content="{{notebook.content}}" data-index="{{index}}" bindtap="goto" bindlongpress="delete" >
+  <view class="title">{{notebook.title}}</view>
+  <view class="contents">
+    <view class="date">{{notebook.date}}</view>
+    <view class="content">{{notebook.content}}</view>
+  </view>
+  <view class="line"></view>
+</view>
+</block>
+<van-dialog id="van-dialog" />
+<view class="footer">
+  <view class="num">{{arrlist.length}}个备忘录</view>
+  <view class="edit" bindtap="edit"><image src="../img/edit.png"></image></view>
+</view>
+<my-component></my-component>

@@ -1,0 +1,47 @@
+page{
+  background-color: rgb(247, 247, 247);
+  overflow: scroll;
+}
+image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 5px;
+  margin: 15rpx;
+}
+.title{
+  text-align: center;
+  color: rgb(236, 168, 65);
+  font-weight: 550;
+  font-family: Microsoft YaHei;
+}
+.line {
+  font-size: 22px;
+  border-bottom: solid 1px #ccc;
+  line-height: 0.9;
+  margin-top: 5px;
+}
+.form{
+  background-color: rgb(255, 255, 255);
+}
+.choose{
+  display: flex;
+}
+.text{
+  margin-left: 15px;
+  margin-top: 35px;
+  font-size: 14px;
+  color: rgb(56, 56, 56);
+}
+.choose .img{
+  margin-left: 350rpx;
+}
+.confirm{
+  margin-left: 200rpx;
+}
+.name{
+  display: flex;
+  margin-left: 5px;
+}
+.name .text{
+  margin-right: 5px;
+}

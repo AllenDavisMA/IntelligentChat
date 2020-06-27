@@ -1,0 +1,29 @@
+<view wx:for="{{chatlists}}" wx:for-index="cid" wx:for-item="chat">
+  <view class="chat self" wx:if="{{userInfo.nickName == chat.nickname}}">
+		<view class="right">
+			<view class="content">{{chat.content}}</view>
+		</view>
+		<view class="left">
+			<image src="{{chat.avatar}}"></image>
+		</view>
+	</view>
+  <view class="chat" wx:else>
+		<view class="left">
+			<image src="{{chat.avatar}}"></image>
+		</view>
+		<view class="right">
+			<view class="nickname">{{chat.nickname}}</view>
+			<view class="content">{{chat.content}}</view>
+		</view>
+	</view>
+</view>
+<view class="bank"></view>
+
+<view class="form">
+  <input class="weui-input" auto-focus placeholder="请输入聊天内容" bindinput="getInputData" value="{{inputValue}}" />
+  <button type="primary" bindtap="sendMsg">发送</button>
+</view>
+<my-component></my-component>
+
+
+

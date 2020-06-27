@@ -1,0 +1,16 @@
+<view class="header">
+  <view class="back" bindtap="back"><image src="../img/back.png"></image></view>
+  <view class="save" bindtap="updata"><image src="../img/save.png"></image></view>
+</view>
+
+<view class = "today">
+    <text>{{date}}</text>
+</view>
+<view class="form">
+  <view class="title">
+    <view>输入标题：</view>
+    <input type="text" bindinput="changeTitle" value="{{titleInput}}"></input>
+  </view>
+  <view class="line"></view>
+  <textarea type="text" class="content" bindinput="changeContent"value="{{contentInput}}"></textarea>
+</view>

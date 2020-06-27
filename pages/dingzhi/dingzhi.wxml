@@ -1,0 +1,46 @@
+<view class="title">小编推荐</view>
+<van-notify id="van-notify" />
+<block wx:for="{{persons}}" wx:for-index="pid" wx:for-item="person">
+  <image src="{{person.avatar}}" data-nickname="{{person.nickname}}" data-avatar="{{person.avatar}}" bindtap="bindObjTap"></image>
+</block>
+<view class="line"></view>
+
+<view class="form">
+  <view>
+    <view class="title">私人定制</view>
+  </view>
+  <view class="choose">
+    <view class="text">选择头像:</view>
+    <van-uploader class="img" file-list="{{file}}" bind:after-read="afterRead">
+      <van-image
+        round
+        width="5rem"
+        height="5rem"
+        src="{{avatar}}"
+      />
+    </van-uploader>
+  </view>
+  
+  <van-cell-group>
+    <van-field
+      required
+      clearable
+      label="昵称"
+      icon="question-o"
+      placeholder="请输入昵称"
+      bind:change="onChange"
+      value="{{inputName}}"
+   />
+  </van-cell-group>
+  <van-picker
+  show-toolbar
+  title="性格"
+  columns="{{ columns }}"
+  default-index="{{ 1 }}"
+  bind:cancel="onCancel"
+  bind:confirm="onConfirm"
+  />
+</view>
+<van-dialog id="van-dialog" />
+<my-component></my-component>
+

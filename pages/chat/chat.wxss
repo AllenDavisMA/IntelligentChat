@@ -1,0 +1,96 @@
+/* pages/chat/chat.wxss */
+page{
+  background-color: rgb(247, 247, 247);
+}
+.chat{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.self{
+  justify-content: flex-end;
+}
+.chat .left{
+  align-self: flex-start;
+}
+.chat .left image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 5px;
+  margin: 15rpx;
+}
+.chat .right{
+  margin-right: 15rpx;
+  margin-left: 12px;
+}
+.chat .right .nickname{
+  font-size: 14px;
+  color: #aaa;
+}
+.chat .right .content{
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 0 8px;
+  line-height: 28px;
+  font-size: 14px;
+  position: relative;
+  min-height: 40px;
+}
+.self .right .content{
+  background-color: #07e4e4;
+}
+.chat .right .content::before{
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-right-color: #fff;
+  position: absolute;
+  left: -18px;
+  top: 10px;
+}
+.self .right .content::before{
+  border: 0;
+}
+.self .right .content::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left-color: #07e4e4;
+  position: absolute;
+  right: -20px;
+  top: 10px;
+}
+
+.form{
+  position: fixed;
+  bottom: 9vh;
+  width: 100%;
+  background-color: #fdfcfc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+}
+.form input{
+  width: 560rpx;
+  margin-left: 20rpx;
+  height: 36px;
+  background-color: #fff;
+  line-height: 36px;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+.form button{
+  width: 150rpx !important;
+  height: 36px;
+  padding: 0 auto;
+  margin-right: 20rpx;
+  font-size: 13px;
+}
+.bank{
+  height: 100px;
+}

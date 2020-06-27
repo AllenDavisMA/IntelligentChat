@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/menu/menu",
+    "pages/dingzhi/dingzhi",
+    "pages/notebook/notebook",
+    "pages/chat/chat",
+    "pages/editNote/editNote",
+    "pages/logs/logs"
+  ],
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-notify": "@vant/weapp/notify/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cel-group": "@vant/weapp/cell-group/index",
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index",
+    "my-component": "pages/bottom/bottom"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
